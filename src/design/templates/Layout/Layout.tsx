@@ -16,9 +16,10 @@ import { Outlet, useNavigate } from 'react-router-dom';
 
 import {useGetMoviesThumbnailListQuery} from "api/queries/movies/getMoviesThumbnailList.query";
 import {routes} from "api/constants/routes.constats";
-import style from './page-wrapper.styles'
 
-export function PageWrapper() {
+import style from './Layout.styles'
+
+export function Layout() {
     const [showDrawer, setShowDrawer] = useState(false)
 
     const navigate = useNavigate()
