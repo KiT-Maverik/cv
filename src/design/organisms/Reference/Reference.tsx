@@ -12,9 +12,10 @@ export const Reference = () => {
 
     return (
         <Box sx={style.container}>
+            <Typography variant='h3'>Reference</Typography>
             {reference.map(({name, company, position, email}) => (
                 <Box key={company}>
-                    <Typography>{company}</Typography>
+                    <Typography fontWeight='bold'>{company}</Typography>
                     <Typography>{`${name}, ${position}`}</Typography>
                     <Tooltip title='Click to copy' arrow placement='top'>
                         <Button startIcon={<MailOutlineIcon/>}>{email}</Button>
