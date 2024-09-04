@@ -16,9 +16,3 @@ declare module '@mui/material/styles' {
         fullWidth: true
     }
 }
-
-declare module '@mui/material/Alert' {
-    interface AlertProps {
-        isBanner?: boolean
-    }
-}
