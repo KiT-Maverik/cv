@@ -51,6 +51,8 @@ export const typography: TypographyOptions = {
     h3: {
         fontSize: pxToRem(48),
         lineHeight: '116.7%',
+        textTransform: 'uppercase',
+        borderBottom: '1px solid red',
     },
     h4: {
         fontSize: pxToRem(34),
