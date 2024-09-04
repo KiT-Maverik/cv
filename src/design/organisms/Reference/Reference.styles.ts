@@ -1,5 +1,5 @@
 import {SxProps} from "@mui/material";
-import {Theme} from "@mui/material/styles";
+import {Theme} from "@mui/material";
 
 const container: SxProps<Theme> = {
     display: "flex",
