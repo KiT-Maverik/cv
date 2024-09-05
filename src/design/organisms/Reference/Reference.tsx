@@ -5,9 +5,6 @@ import React from "react";
 
 import {useData} from "hooks";
 
-interface ReferenceProps {
-}
-
 export const Reference = () => {
     const {reference} = useData()
 
@@ -16,10 +13,9 @@ export const Reference = () => {
             <Typography variant='h2'>Reference</Typography>
             {reference.map(({name, company, position, email}) => (
                 <Box key={company}>
-                    <Typography fontWeight='bold'>{company}</Typography>
-                    <Typography>{`${name}, ${position}`}</Typography>
-                    <Tooltip title='Click to copy' arrow placement='top'>
-                        <Button startIcon={<MailOutlineIcon/>} color='inherit'>{email}</Button>
+                    <Typography pl={1} fontWeight={700}>{`${company} / ${position}`}</Typography>
+                    <Tooltip title='Click to copy email' arrow placement='top'>
+                        <Button startIcon={<MailOutlineIcon/>} color='inherit' fullWidth>{name}</Button>
                     </Tooltip>
                 </Box>
             ))}

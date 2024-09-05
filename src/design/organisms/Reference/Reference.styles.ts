@@ -3,7 +3,8 @@ import {Theme} from "@mui/material";
 
 const container: SxProps<Theme> = {
     display: "flex",
-    flexWrap: "wrap",
+    flexDirection: 'column',
+    alignItems: 'stretch',
     gap: 1,
 }
 

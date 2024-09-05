@@ -9,9 +9,7 @@ export const typography: TypographyOptions = {
     fontFamily: 'Roboto',
     htmlFontSize: fontSize,
     body1: {
-        fontSize: pxToRem(12),
-        lineHeight: '150%',
-        letterSpacing: '0.15px',
+        fontSize: pxToRem(14),
     },
     body2: {
         fontSize: pxToRem(14),
