@@ -7,7 +7,7 @@ export const paletteLight: PaletteOptions = {
         primary: '#545454',
     },
     background: {
-        surface: grey['50'],
+        surface: grey['200'],
     },
     primary: {
         main: '#163853',

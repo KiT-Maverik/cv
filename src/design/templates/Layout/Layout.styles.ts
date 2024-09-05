@@ -3,6 +3,7 @@ import {SxProps, Theme} from "@mui/material";
 export const container: SxProps<Theme> = {
     minHeight: "100vh",
     gap: 5,
+    background: theme => theme.palette.background.surface,
 } as const
 
 export const main: SxProps<Theme> = {
