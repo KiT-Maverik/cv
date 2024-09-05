@@ -48,6 +48,9 @@ const columns: { info: SxProps<Theme>; main: SxProps<Theme> } = {
         zIndex: 1,
     },
     main: {
+        display: "flex",
+        flexDirection: "column",
+        gap: 5,
         p: 5,
         pt: '250px',
     },
