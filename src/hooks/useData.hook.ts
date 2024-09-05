@@ -2,7 +2,7 @@ import {useMemo} from "react";
 
 import {education, personal, reference, contacts, skills, goals} from "data";
 
-export const useDataHook = () => {
+export const useData = () => {
     return useMemo(() => ({
         goals,
         skills,

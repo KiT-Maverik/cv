@@ -1,11 +1,10 @@
 import {Box, Container, Paper, Typography} from "@mui/material";
 import React from 'react';
 
-import {Reference, Skills, Contacts, Education} from "design/organisms";
+import {Reference, Skills, Contacts, Education, QR} from "design/organisms";
+import {useData} from "hooks";
 
 import style from './HomePage.styles'
-import {useData} from "../../../hooks/useData";
-import {QR} from "../../organisms/QR/QR";
 
 export function HomePage() {
     const {personal, goals} = useData()
