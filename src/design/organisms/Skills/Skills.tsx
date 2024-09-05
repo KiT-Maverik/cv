@@ -1,12 +1,13 @@
-import style from './Skills.styles'
 import {Box, Chip, Stack, Typography} from "@mui/material";
-import {skills} from "../../../data/software-developer/skills";
 import React from "react";
 
-interface SkillsProps {
-}
+import {useDataHook} from "hooks/useData.hook";
 
-export const Skills = ({}: SkillsProps) => {
+import style from './Skills.styles'
+
+export const Skills = () => {
+    const {skills} = useDataHook()
+
     return (
         <Box>
             <Typography variant='h3'>
