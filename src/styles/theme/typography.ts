@@ -39,10 +39,13 @@ export const typography: TypographyOptions = {
         letterSpacing: '0.4px',
     },
     h1: {
-        fontSize: pxToRem(36),
+        fontSize: pxToRem(72),
+        textTransform: 'uppercase',
+        fontWeight: 800,
     },
     h2: {
         fontSize: pxToRem(20),
+        textTransform: 'uppercase',
     },
     h3: {
         fontSize: pxToRem(18),
