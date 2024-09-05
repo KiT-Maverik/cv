@@ -1,7 +1,7 @@
 import {Box, Container, Paper, Typography} from "@mui/material";
 import React from 'react';
 
-import {Reference, Skills, Contacts} from "design/organisms";
+import {Reference, Skills, Contacts, Education} from "design/organisms";
 
 import style from './HomePage.styles'
 
@@ -10,9 +10,10 @@ export function HomePage() {
         <Container>
             <Paper sx={style.page}>
                 <Box>
-                    <Contacts/>
                     <Skills/>
                     <Reference/>
+                    <Contacts/>
+                    <Education/>
                 </Box>
                 <Box>
                     <Box>
