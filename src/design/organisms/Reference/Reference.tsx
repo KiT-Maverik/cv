@@ -2,7 +2,8 @@ import style from './Reference.styles'
 import {Box, Button, Tooltip, Typography} from "@mui/material";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import React from "react";
-import {useData} from "hooks/useData";
+
+import {useData} from "hooks";
 
 interface ReferenceProps {
 }

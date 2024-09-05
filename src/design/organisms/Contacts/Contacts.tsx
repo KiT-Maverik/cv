@@ -4,7 +4,7 @@ import React, {ReactNode, useMemo} from "react";
 
 import {CONTACTS} from "data";
 import {LinkedinIcon, TelegramIcon} from "design/atoms";
-import {useData} from "hooks/useData";
+import {useData} from "hooks";
 
 import style from './Contacts.styles'
 

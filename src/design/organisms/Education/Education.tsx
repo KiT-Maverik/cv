@@ -1,7 +1,7 @@
 import {Box, Stack, Typography} from "@mui/material";
 import React from "react";
 
-import {useData} from "hooks/useData";
+import {useData} from "hooks";
 
 import style from './Education.styles'
 
