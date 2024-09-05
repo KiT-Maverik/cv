@@ -1,10 +1,10 @@
 import { createTheme, PaletteMode } from '@mui/material/styles'
 
-import * as components from './theme/components'
-import { paletteLight } from './theme/paletteLight'
-import { paletteDark } from './theme/paletteDark'
-import { shape } from './theme/shape'
-import { typography } from './theme/typography'
+import * as components from './components'
+import { paletteLight } from './paletteLight'
+import { paletteDark } from './paletteDark'
+import { shape } from './shape'
+import { typography } from './typography'
 
 export const theme = (mode: PaletteMode) =>
     createTheme({
