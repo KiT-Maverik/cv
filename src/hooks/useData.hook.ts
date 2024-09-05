@@ -1,12 +1,14 @@
 import {useMemo} from "react";
 
-import * as data from 'data'
-import {education, personal, reference} from "data";
+import {education, personal, reference, contacts, skills, goals} from "data";
 
 export const useDataHook = () => {
     return useMemo(() => ({
-        personal,
+        goals,
+        skills,
+        contacts,
         education,
+        personal,
         reference,
     }), []);
 }
