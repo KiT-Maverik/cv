@@ -1,14 +1,14 @@
 import style from './Reference.styles'
-import {Box, Button, Stack, Tooltip, Typography} from "@mui/material";
+import {Box, Button, Tooltip, Typography} from "@mui/material";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import React from "react";
-import {useDataHook} from "hooks/useData.hook";
+import {useData} from "hooks/useData";
 
 interface ReferenceProps {
 }
 
 export const Reference = () => {
-    const {reference} = useDataHook()
+    const {reference} = useData()
 
     return (
         <Box sx={style.container}>
