@@ -10,7 +10,7 @@ interface Experience {
 
 export const experience: Experience[] = [
         {
-            start: '2022',
+            start: '2021',
             end: 'Present',
             company: 'By Owls',
             position: 'Code Master',
@@ -27,6 +27,53 @@ export const experience: Experience[] = [
                     en : 'Maintain and improve the codebase, ensuring code quality through code reviews, refactoring, and optimizing performance.',
                     ua : 'Підтримка та вдосконалення кодової бази, забезпечення якості коду через код ревʼю, рефакторинг та оптимізацію продуктивності.',
                 },
+            ],
+        },
+        {
+            start: '2020',
+            end: '2021',
+            company: 'Tacans',
+            position: 'Software Development Engineer',
+            responsibilities: [
+                {
+                    en : 'Perform technical assessment of mockups/wireframes and architectural designs/specifications',
+                    ua : 'Технічний аналіз макетів та прототипів, створення на їх основі архітектурних специфікацій',
+                },
+                {
+                    en : 'Translate complex functional, technical and business requirements into architectural designs',
+                    ua : 'Робота зі складними функціональними, технічними, архітектурними вимогами' +
+                        ' та їх імплементація у архітектурних специфікаціяї',
+                },
+                {
+                    en : 'Helping other team members grow as engineers through code review, pairing, and mentoring',
+                    ua : 'Підтримка розвитку інших членів команди через участь у код-ревʼю, парних активностях' +
+                        ' та менторингу',
+                },
+            ],
+        },
+        {
+            start: '2016',
+            end: '2019',
+            company: 'Alteryx',
+            position: 'Software Development Engineer',
+            responsibilities: [
+                {
+                    en : 'Participate in all SDLC stages including estimating, technical design,' +
+                        ' and application implementation',
+                    ua : 'Приймати участь у розробці продукту на всіх етапах SDLC, ' +
+                        'виконуючи оцінку, проектування та розробку нового функціоналу',
+                },
+                {
+                    en : 'Contribute to quality control - participate in code review, document ' +
+                        'developed solutions, own processes.',
+                    ua : 'Вносити свій вклад у якість продукту: ' +
+                        'проводити ревʼю коду, документувати новий функціонал та процеси',
+                },
+                {
+                    en : 'Front End adjustment for testing needs',
+                    ua : 'Підлаштування фронтенду для тестування',
+                },
+
             ],
         },
 ]
