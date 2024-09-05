@@ -4,12 +4,25 @@ import React from 'react';
 import {Reference, Skills, Contacts, Education} from "design/organisms";
 
 import style from './HomePage.styles'
+import {useData} from "../../../hooks/useData";
+import {QR} from "../../organisms/QR/QR";
 
 export function HomePage() {
+    const {personal, goals} = useData()
+
     return (
         <Container>
             <Paper sx={style.page}>
+                <Box sx={style.header.container}>
+                    <Typography variant='h1' sx={style.header.name}>
+                        {`${personal.firstname} ${personal.lastname}`}
+                    </Typography>
+                    <Typography variant='h2' sx={style.header.goals}>
+                        {goals.join(' ')}
+                    </Typography>
+                </Box>
                 <Box sx={style.columns.info}>
+                    <QR/>
                     <Skills/>
                     <Reference/>
                     <Contacts/>
