@@ -1,4 +1,7 @@
-import {Box, Container, Paper, Typography} from "@mui/material";
+import PrintIcon from '@mui/icons-material/LocalPrintshop';
+import TranslateIcon from '@mui/icons-material/Translate';
+import TextIcon from '@mui/icons-material/Assignment';
+import {Box, Container, IconButton, Paper, Tooltip, Typography} from "@mui/material";
 import React from 'react';
 
 import {Reference, Skills, Contacts, Education, QR} from "design/organisms";
@@ -19,6 +22,17 @@ export function HomePage() {
                     <Typography variant='h2' sx={style.header.goals}>
                         {goals.join(' / ')}
                     </Typography>
+                    <Box sx={style.header.actions}>
+                        <Tooltip title='Translate EN/UA' arrow>
+                            <IconButton><TranslateIcon/></IconButton>
+                        </Tooltip>
+                        <Tooltip title='Export as text' arrow>
+                            <IconButton><TextIcon/></IconButton>
+                        </Tooltip>
+                        <Tooltip title='Print PDF' arrow>
+                            <IconButton><PrintIcon/></IconButton>
+                        </Tooltip>
+                    </Box>
                 </Box>
                 <Box sx={style.columns.info}>
                     <QR/>

@@ -8,7 +8,7 @@ const page:SxProps<Theme> = {
     position: "relative",
 } as const
 
-const header: {container: SxProps<Theme>; name: SxProps<Theme>; goals: SxProps<Theme> } ={
+const header: {container: SxProps<Theme>; actions: SxProps<Theme>; name: SxProps<Theme>; goals: SxProps<Theme> } ={
     container: {
         position: "absolute",
         top: 0,
@@ -16,6 +16,14 @@ const header: {container: SxProps<Theme>; name: SxProps<Theme>; goals: SxProps<T
         right: 0,
         height: 150,
         backgroundColor: theme => theme.palette.background.accent,
+    },
+    actions: {
+        position: "absolute",
+        top: 10,
+        right: 20,
+
+        display: "flex",
+        gap: 2,
     },
     name: {
         position: "absolute",
