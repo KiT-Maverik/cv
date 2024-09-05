@@ -3,7 +3,6 @@ import {SxProps, Theme} from "@mui/material";
 const page:SxProps<Theme> = {
     display: 'grid',
     gridTemplateColumns: '1fr 3fr',
-    gap: 5,
     overflow: 'hidden',
     borderRadius: 2,
     position: "relative",
@@ -40,7 +39,10 @@ const columns: { info: SxProps<Theme>; main: SxProps<Theme> } = {
         m: 5,
         zIndex: 1,
     },
-    main: {},
+    main: {
+        p: 5,
+        pt: '250px',
+    },
 } as const
 
 export default { columns, header, page };

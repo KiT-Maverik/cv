@@ -27,14 +27,7 @@ export function HomePage() {
                     <Contacts/>
                     <Education/>
                 </Box>
-                <Box>
-                    <Box>
-                        <Typography variant="h1" fontWeight={1000} textTransform='uppercase'>
-                            {`Nick `}
-                            <Typography component='span' variant="h1">Orlov</Typography>
-                        </Typography>
-                        <Typography variant="h2">Goal, Goal</Typography>
-                    </Box>
+                <Box sx={style.columns.main}>
                     <Box>
                         <Typography textTransform='uppercase'>
                             Profile
