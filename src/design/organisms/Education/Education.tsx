@@ -10,7 +10,7 @@ export const Education = () => {
 
     return (
         <Box>
-            <Typography variant='h3'>
+            <Typography variant='h2'>
                 Education
             </Typography>
             <Stack gap={1}>

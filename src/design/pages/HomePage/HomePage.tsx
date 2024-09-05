@@ -19,7 +19,7 @@ export function HomePage() {
                     <Typography variant='h1' sx={style.header.name}>
                         {`${personal.firstname} ${personal.lastname}`}
                     </Typography>
-                    <Typography variant='h2' sx={style.header.goals}>
+                    <Typography variant='h3' sx={style.header.goals}>
                         {goals.join(' / ')}
                     </Typography>
                     <Box sx={style.header.actions}>

@@ -10,7 +10,7 @@ export const Skills = () => {
 
     return (
         <Box>
-            <Typography variant='h3'>
+            <Typography variant='h2'>
                 Skills
             </Typography>
             <Stack direction='row' flexWrap='wrap' gap={1}>

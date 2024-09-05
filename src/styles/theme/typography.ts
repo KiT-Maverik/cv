@@ -46,12 +46,12 @@ export const typography: TypographyOptions = {
     h2: {
         fontSize: pxToRem(20),
         textTransform: 'uppercase',
+        marginBottom: '12px',
+        fontWeight: 800,
     },
     h3: {
-        fontSize: pxToRem(18),
+        fontSize: pxToRem(16),
         textTransform: 'uppercase',
-        borderBottom: '1px solid',
-        marginBottom: '12px',
     },
     h4: {
         fontSize: pxToRem(34),

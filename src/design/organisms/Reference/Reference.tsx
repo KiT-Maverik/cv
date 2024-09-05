@@ -13,7 +13,7 @@ export const Reference = () => {
 
     return (
         <Box sx={style.container}>
-            <Typography variant='h3'>Reference</Typography>
+            <Typography variant='h2'>Reference</Typography>
             {reference.map(({name, company, position, email}) => (
                 <Box key={company}>
                     <Typography fontWeight='bold'>{company}</Typography>
