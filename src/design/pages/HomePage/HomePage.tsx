@@ -17,7 +17,7 @@ export function HomePage() {
                         {`${personal.firstname} ${personal.lastname}`}
                     </Typography>
                     <Typography variant='h2' sx={style.header.goals}>
-                        {goals.join(' ')}
+                        {goals.join(' / ')}
                     </Typography>
                 </Box>
                 <Box sx={style.columns.info}>
