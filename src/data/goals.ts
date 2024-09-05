@@ -1,4 +1,4 @@
-export const goals = {
-    developer: 'Software Developer',
-    aiEngineer: 'AI Engineer',
-}
+export const goals = [
+    'Software Developer',
+    'AI Engineer',
+]
