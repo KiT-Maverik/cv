@@ -1,11 +1,11 @@
-import {LOCALE, localeKeys} from "../constants";
+import {LOCALE} from "../constants";
 
 interface Experience {
     start: string
     end: string
     company: string
     position: string
-    responsibilities: Array<{ [LOCALE.EN]: string; [LOCALE.UA]: string}>
+    responsibilities: Array<{ [key in LOCALE]: string}>
 }
 
 export const experience: Experience[] = [
