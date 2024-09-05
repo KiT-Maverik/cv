@@ -8,11 +8,6 @@ export const paletteLight: PaletteOptions = {
     },
     background: {
         surface: grey['200'],
-    },
-    primary: {
-        main: '#163853',
-        dark: '#112C41',
-        light: '#2C70A5',
-        contrastText: '#FFF',
+        accent: '#dfd7d3'
     },
 }

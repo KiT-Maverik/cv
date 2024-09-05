@@ -17,6 +17,7 @@ declare module '@mui/material/styles' {
 
     interface TypeBackground {
         surface: string
+        accent: string
     }
     interface PaletteOptions {
         tertiary?: PaletteColorOptions
