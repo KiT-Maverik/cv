@@ -1,5 +1,5 @@
 import EmailIcon from '@mui/icons-material/MailOutlineRounded';
-import {Box, Chip, Stack, Typography} from "@mui/material";
+import {Box, Button, Chip, Stack, Typography} from "@mui/material";
 import React, {ReactNode, useMemo} from "react";
 
 import {CONTACTS} from "data";
@@ -22,8 +22,10 @@ export const Contacts = () => {
             <Typography variant='h3'>
                 Contacts
             </Typography>
-            <Stack direction='row' flexWrap='wrap' gap={1}>
-                {Object.values(CONTACTS).map(item => <Box>{icon[item]}</Box>)}
+            <Stack gap={1}>
+                {Object.values(CONTACTS).map(item =>
+                    <Button startIcon={icon[item]} color='inherit'>{contacts[item].label}</Button>
+                )}
             </Stack>
         </Box>
     )
