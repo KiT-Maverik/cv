@@ -19,7 +19,7 @@ export const Reference = () => {
                     <Typography fontWeight='bold'>{company}</Typography>
                     <Typography>{`${name}, ${position}`}</Typography>
                     <Tooltip title='Click to copy' arrow placement='top'>
-                        <Button startIcon={<MailOutlineIcon/>}>{email}</Button>
+                        <Button startIcon={<MailOutlineIcon/>} color='inherit'>{email}</Button>
                     </Tooltip>
                 </Box>
             ))}
