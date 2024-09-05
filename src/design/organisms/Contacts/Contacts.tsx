@@ -1,15 +1,15 @@
 import EmailIcon from '@mui/icons-material/MailOutlineRounded';
-import {Box, Button, Chip, Stack, Typography} from "@mui/material";
+import {Box, Button, Stack, Typography} from "@mui/material";
 import React, {ReactNode, useMemo} from "react";
 
 import {CONTACTS} from "data";
 import {LinkedinIcon, TelegramIcon} from "design/atoms";
-import {useDataHook} from "hooks/useData.hook";
+import {useData} from "hooks/useData";
 
 import style from './Contacts.styles'
 
 export const Contacts = () => {
-    const {contacts} = useDataHook()
+    const {contacts} = useData()
 
     const icon = useMemo<{[key in CONTACTS] : ReactNode}>(() => ({
         [CONTACTS.EMAIL]: <EmailIcon/>,
