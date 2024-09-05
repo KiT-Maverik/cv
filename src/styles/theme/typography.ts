@@ -13,8 +13,6 @@ export const typography: TypographyOptions = {
     },
     body2: {
         fontSize: pxToRem(14),
-        lineHeight: '143%',
-        letterSpacing: 'unset',
     },
     subtitle1: {
         fontSize: pxToRem(18),
