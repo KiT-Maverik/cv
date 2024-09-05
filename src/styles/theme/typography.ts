@@ -44,7 +44,7 @@ export const typography: TypographyOptions = {
     h2: {
         fontSize: pxToRem(20),
         textTransform: 'uppercase',
-        marginBottom: '12px',
+        marginBottom: '8px',
         fontWeight: 800,
     },
     h3: {
