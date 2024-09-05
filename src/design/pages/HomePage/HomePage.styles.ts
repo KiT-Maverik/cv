@@ -4,6 +4,8 @@ const page:SxProps<Theme> = {
     display: 'grid',
     gridTemplateColumns: '1fr 3fr',
     gap: 5,
+    overflow: 'hidden',
+    borderRadius: 2,
 } as const
 
 const columns: { info: SxProps<Theme>; main: SxProps<Theme> } = {
