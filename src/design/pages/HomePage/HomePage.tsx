@@ -4,7 +4,7 @@ import TextIcon from '@mui/icons-material/Assignment';
 import {Box, Container, IconButton, Paper, Tooltip, Typography} from "@mui/material";
 import React from 'react';
 
-import {Reference, Skills, Contacts, Education, QR, Portfolio} from "design/organisms";
+import {Experience, Reference, Skills, Contacts, Education, QR, Portfolio, Profile} from "design/organisms";
 import {useData} from "hooks";
 
 import style from './HomePage.styles'
@@ -42,14 +42,8 @@ export function HomePage() {
                     <Education/>
                 </Box>
                 <Box sx={style.columns.main}>
-                    <Box>
-                        <Typography textTransform='uppercase'>
-                            Profile
-                        </Typography>
-                        <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. Ut enim ad minim veniam quis nostrud exercitation.
-                        </Typography>
-                    </Box>
+                    <Profile/>
+                    <Experience/>
                     <Portfolio/>
                 </Box>
             </Paper>
