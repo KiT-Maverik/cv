@@ -5,7 +5,6 @@ const container: SxProps<Theme> = {
     display: "flex",
     flexDirection: 'column',
     alignItems: 'stretch',
-    gap: 1,
 }
 
 export default {
