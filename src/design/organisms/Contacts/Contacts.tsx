@@ -1,9 +1,10 @@
+import TelegramIcon from '@mui/icons-material/SendRounded';
 import EmailIcon from '@mui/icons-material/MailOutlineRounded';
+import LinkedinIcon from '@mui/icons-material/AccountBoxRounded';
 import {Box, Button, Stack, Typography} from "@mui/material";
 import React, {ReactNode, useMemo} from "react";
 
 import {CONTACTS} from "data";
-import {LinkedinIcon, TelegramIcon} from "design/atoms";
 import {useData} from "hooks";
 
 import style from './Contacts.styles'
@@ -18,15 +19,13 @@ export const Contacts = () => {
     }), []);
 
     return (
-        <Box>
+        <Box sx={style.container}>
             <Typography variant='h2'>
                 Contacts
             </Typography>
-            <Stack gap={1}>
                 {Object.values(CONTACTS).map(item =>
                     <Button startIcon={icon[item]} color='inherit'>{contacts[item].label}</Button>
                 )}
-            </Stack>
         </Box>
     )
 }

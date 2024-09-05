@@ -6,15 +6,15 @@ export enum CONTACTS {
 
 export const contacts = {
     [CONTACTS.EMAIL]: {
-        label: 'Email',
+        label: 'mykola.orlov79@gmail.com',
         link: 'mykola.orlov79@gmail.com',
     },
     [CONTACTS.LINKED_IN]: {
-        label: 'LinkedIn',
+        label: 'Linked In',
         link: 'https://linkedin.com/in/orlovn',
     },
     [CONTACTS.TELEGRAM]: {
-        label: 'Email',
+        label: 'Telegram',
         link: 'https://t.me/@mykolaorlov',
     },
 }
