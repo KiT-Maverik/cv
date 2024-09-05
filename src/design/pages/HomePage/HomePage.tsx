@@ -9,7 +9,7 @@ export function HomePage() {
     return (
         <Container>
             <Paper sx={style.page}>
-                <Box>
+                <Box sx={style.columns.info}>
                     <Skills/>
                     <Reference/>
                     <Contacts/>
@@ -17,10 +17,11 @@ export function HomePage() {
                 </Box>
                 <Box>
                     <Box>
-                        <Typography variant="h3" fontWeight={1000} textTransform='uppercase'>
+                        <Typography variant="h1" fontWeight={1000} textTransform='uppercase'>
                             {`Nick `}
-                            <Typography component='span' variant="h3">Orlov</Typography>
+                            <Typography component='span' variant="h1">Orlov</Typography>
                         </Typography>
+                        <Typography variant="h2">Goal, Goal</Typography>
                     </Box>
                     <Box>
                         <Typography textTransform='uppercase'>

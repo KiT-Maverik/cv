@@ -9,7 +9,7 @@ export const typography: TypographyOptions = {
     fontFamily: 'Roboto',
     htmlFontSize: fontSize,
     body1: {
-        fontSize: pxToRem(16),
+        fontSize: pxToRem(12),
         lineHeight: '150%',
         letterSpacing: '0.15px',
     },
@@ -39,20 +39,16 @@ export const typography: TypographyOptions = {
         letterSpacing: '0.4px',
     },
     h1: {
-        fontSize: pxToRem(96),
-        lineHeight: '116.7%',
-        letterSpacing: '-1.5px',
+        fontSize: pxToRem(36),
     },
     h2: {
-        fontSize: pxToRem(60),
-        lineHeight: '120%',
-        letterSpacing: '-0.5px',
+        fontSize: pxToRem(20),
     },
     h3: {
-        fontSize: pxToRem(48),
-        lineHeight: '116.7%',
+        fontSize: pxToRem(18),
         textTransform: 'uppercase',
-        borderBottom: '1px solid red',
+        borderBottom: '1px solid',
+        marginBottom: '12px',
     },
     h4: {
         fontSize: pxToRem(34),
