@@ -1,15 +1,16 @@
-import React from 'react';
 import {Box, Container, Paper, Typography} from "@mui/material";
+import React from 'react';
+
+import {Reference, Skills, Contacts} from "design/organisms";
 
 import style from './HomePage.styles'
-import {Reference} from "../../organisms";
-import {Skills} from "../../organisms/Skills/Skills";
 
 export function HomePage() {
     return (
         <Container>
             <Paper sx={style.page}>
                 <Box>
+                    <Contacts/>
                     <Skills/>
                     <Reference/>
                 </Box>
