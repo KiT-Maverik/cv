@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useCallback, useMemo, useState } from 'react'
 import { PaletteMode, ThemeProvider as MUI_ThemeProvider } from '@mui/material'
-import { theme } from 'styles/theme'
+import { theme } from 'styles'
 
 export interface ThemeContext {
     theme: PaletteMode
