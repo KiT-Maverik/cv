@@ -1,12 +1,12 @@
 import {Box, Chip, Stack, Typography} from "@mui/material";
 import React from "react";
 
-import {useDataHook} from "hooks/useData.hook";
+import {useData} from "hooks/useData";
 
 import style from './Skills.styles'
 
 export const Skills = () => {
-    const {skills} = useDataHook()
+    const {skills} = useData()
 
     return (
         <Box>
