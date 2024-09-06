@@ -2,7 +2,12 @@ import {SxProps, Theme} from "@mui/material";
 
 import {pageWidth, layout} from "../../../constants";
 
-const page:SxProps<Theme> = {
+const container: SxProps<Theme> = {
+    display: 'flex',
+    justifyContent: 'center',
+} as const
+
+const cv:SxProps<Theme> = {
     display: 'grid',
     gridTemplateColumns: '1fr 3fr',
     overflow: 'hidden',
@@ -69,4 +74,4 @@ const columns: { info: SxProps<Theme>; main: SxProps<Theme> } = {
     },
 } as const
 
-export default { columns, header, page };
+export default { columns, container, header, cv };

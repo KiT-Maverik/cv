@@ -24,8 +24,8 @@ export function HomePage() {
     }
 
     return (
-        <Container>
-            <Paper sx={style.page} ref={cvRef}>
+        <Container sx={style.container}>
+            <Paper sx={style.cv} ref={cvRef}>
                 <Box sx={style.header.container}>
                     <Typography variant='h1' sx={style.header.name}>
                         {`${personal.firstname} ${personal.lastname}`}

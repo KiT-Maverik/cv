@@ -18,7 +18,7 @@ const portfolio: { container: SxProps<Theme>; item: SxProps<Theme>; icon: SxProp
         display: "flex",
         gap: 3,
         alignItems: "center",
-        fontSize: 32,
+        fontSize: 18,
         p: 5,
         borderRadius: 2,
 
