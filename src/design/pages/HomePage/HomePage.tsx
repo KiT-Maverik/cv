@@ -2,7 +2,8 @@ import PrintIcon from '@mui/icons-material/LocalPrintshop';
 import TranslateIcon from '@mui/icons-material/Translate';
 import TextIcon from '@mui/icons-material/Assignment';
 import {Box, Container, IconButton, Paper, Tooltip, Typography} from "@mui/material";
-import React, {useContext} from 'react';
+import React, {useContext, useRef} from 'react';
+import ReactToPrint from 'react-to-print';
 
 import {AppSettings} from "App";
 import {LOCALE} from "../../../constants";
@@ -15,6 +16,8 @@ export function HomePage() {
     const {personal, goals} = useData()
     const { locale, setLocale } = useContext(AppSettings)
 
+    const cvRef = useRef<HTMLDivElement>(null);
+
     const handleLocaleChange = () => {
         if (locale === LOCALE.EN) setLocale(LOCALE.UA);
         else if (locale === LOCALE.UA) setLocale(LOCALE.EN);
@@ -22,7 +25,7 @@ export function HomePage() {
 
     return (
         <Container>
-            <Paper sx={style.page}>
+            <Paper sx={style.page} ref={cvRef}>
                 <Box sx={style.header.container}>
                     <Typography variant='h1' sx={style.header.name}>
                         {`${personal.firstname} ${personal.lastname}`}
@@ -37,9 +40,14 @@ export function HomePage() {
                         <Tooltip title='Export as text' arrow>
                             <IconButton><TextIcon/></IconButton>
                         </Tooltip>
-                        <Tooltip title='Print PDF' arrow>
-                            <IconButton><PrintIcon/></IconButton>
-                        </Tooltip>
+                        <ReactToPrint
+                            trigger={() => (
+                                <Tooltip title='Print PDF' arrow>
+                                    <IconButton><PrintIcon/></IconButton>
+                                </Tooltip>
+                            )}
+                            content={() => cvRef.current}
+                        />
                     </Box>
                 </Box>
                 <Box sx={style.columns.info}>
