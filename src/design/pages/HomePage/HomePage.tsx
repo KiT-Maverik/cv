@@ -71,7 +71,7 @@ export function HomePage() {
                         <Alert severity='info'>For recruiters with care in mind 😽</Alert>
                         <IconButton><CloseIcon/></IconButton>
                     </Box>
-                    <Box component='textarea' sx={style.modal.content}>
+                    <Box component='textarea' disabled sx={style.modal.content}>
                         {rawText}
                     </Box>
                 </Box>

@@ -9,6 +9,8 @@ export const useRawData = () => {
         `Goals: ${data.goals.join(' / ')}`,
         `Contacts:\n${contactsList.map(item => `- ${data.contacts[item].link}`).join('\n')}`,
         `Skills: ${data.skills.join(', ')}`,
+        `Education:\n${data.education.map(({facility, specialisation}) => `- ${facility}, ${specialisation}`).join('\n')}`,
+        `Reference:\n${data.reference.map(({email, name, company, position}) => `- ${name}, ${position} at ${company}. Email: ${email}`).join('\n')}`,
     ]
 
     return {rawText: rawData.join('\n\n')}
