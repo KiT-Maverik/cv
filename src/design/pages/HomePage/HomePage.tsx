@@ -3,7 +3,7 @@ import PrintIcon from '@mui/icons-material/LocalPrintshop';
 import TranslateIcon from '@mui/icons-material/Translate';
 import TextIcon from '@mui/icons-material/Assignment';
 import {Alert, Box, Container, IconButton, Modal, Paper, Tooltip, Typography} from "@mui/material";
-import React, {useContext, useRef} from 'react';
+import React, {useContext, useRef, useState} from 'react';
 import ReactToPrint from 'react-to-print';
 
 import {AppSettings} from "App";
@@ -14,6 +14,7 @@ import {useData, useRawData} from "hooks";
 import style from './HomePage.styles'
 
 export function HomePage() {
+    const [showModal, setShowModal] = useState(false)
     const {personal, goals} = useData()
     const {rawText} = useRawData()
     const { locale, setLocale } = useContext(AppSettings)
@@ -39,7 +40,7 @@ export function HomePage() {
                         <Tooltip title='Translate EN/UA' arrow onClick={handleLocaleChange}>
                             <IconButton><TranslateIcon/></IconButton>
                         </Tooltip>
-                        <Tooltip title='Export as text' arrow>
+                        <Tooltip title='Export as text' arrow onClick={() => setShowModal(true)}>
                             <IconButton><TextIcon/></IconButton>
                         </Tooltip>
                         <ReactToPrint
@@ -65,11 +66,11 @@ export function HomePage() {
                     <Portfolio/>
                 </Box>
             </Paper>
-            <Modal open={true} sx={style.modal.overlay}>
+            <Modal open={showModal} sx={style.modal.overlay}>
                 <Box sx={style.modal.container}>
                     <Box>
                         <Alert severity='info'>For recruiters with care in mind 😽</Alert>
-                        <IconButton><CloseIcon/></IconButton>
+                        <IconButton onClick={() => setShowModal(false)}><CloseIcon/></IconButton>
                     </Box>
                     <Box component='textarea' disabled sx={style.modal.content}>
                         {rawText}
