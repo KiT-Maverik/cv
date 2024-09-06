@@ -1,4 +1,5 @@
 export const goals = [
-    'Software Developer',
-    'AI Engineer',
+    'Software Development',
+    'AI Engineering',
+    'Leadership',
 ]
