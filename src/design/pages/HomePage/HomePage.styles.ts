@@ -7,6 +7,29 @@ const container: SxProps<Theme> = {
     justifyContent: 'center',
 } as const
 
+const modal: { overlay: SxProps<Theme>; container: SxProps<Theme>; content: SxProps<Theme>; header: SxProps<Theme> } = {
+    overlay: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    container: {
+        backgroundColor: theme => theme.palette.background.paper,
+        borderRadius: 3,
+        p: 5,
+    },
+    header: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: 2,
+    },
+    content: {
+        width: 300,
+        height: 300,
+    }
+} as const
+
 const cv:SxProps<Theme> = {
     display: 'grid',
     gridTemplateColumns: '1fr 3fr',
@@ -74,4 +97,4 @@ const columns: { info: SxProps<Theme>; main: SxProps<Theme> } = {
     },
 } as const
 
-export default { columns, container, header, cv };
+export default { columns, container, header, cv, modal };

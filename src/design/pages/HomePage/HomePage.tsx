@@ -1,19 +1,21 @@
+import CloseIcon from '@mui/icons-material/CloseRounded';
 import PrintIcon from '@mui/icons-material/LocalPrintshop';
 import TranslateIcon from '@mui/icons-material/Translate';
 import TextIcon from '@mui/icons-material/Assignment';
-import {Box, Container, IconButton, Paper, Tooltip, Typography} from "@mui/material";
+import {Alert, Box, Container, IconButton, Modal, Paper, Tooltip, Typography} from "@mui/material";
 import React, {useContext, useRef} from 'react';
 import ReactToPrint from 'react-to-print';
 
 import {AppSettings} from "App";
 import {LOCALE} from "../../../constants";
 import {Contacts, Education, Experience, Portfolio, Profile, QR, Reference, Skills} from "design/organisms";
-import {useData} from "hooks";
+import {useData, useRawText} from "hooks";
 
 import style from './HomePage.styles'
 
 export function HomePage() {
     const {personal, goals} = useData()
+    const {rawText} = useRawText()
     const { locale, setLocale } = useContext(AppSettings)
 
     const cvRef = useRef<HTMLDivElement>(null);
@@ -63,6 +65,17 @@ export function HomePage() {
                     <Portfolio/>
                 </Box>
             </Paper>
+            <Modal open={true} sx={style.modal.overlay}>
+                <Box sx={style.modal.container}>
+                    <Box>
+                        <Alert severity='info'>For recruiters with care in mind 😽</Alert>
+                        <IconButton><CloseIcon/></IconButton>
+                    </Box>
+                    <Box component='textarea' sx={style.modal.content}>
+                        {rawText}
+                    </Box>
+                </Box>
+            </Modal>
         </Container>
     );
 }
