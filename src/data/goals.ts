@@ -1,5 +1,1 @@
-export const goals = [
-    'Software Development',
-    'AI Engineering',
-    'Leadership',
-]
+export const goals = ["Software Development", "AI Engineering", "Leadership"];

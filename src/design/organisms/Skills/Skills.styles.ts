@@ -1,8 +1,7 @@
-import {SxProps, Theme} from "@mui/material";
+import { SxProps, Theme } from "@mui/material";
 
-const container: SxProps<Theme> = {
-}
+const container: SxProps<Theme> = {};
 
 export default {
-    container,
-}
+  container,
+};
