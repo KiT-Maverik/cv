@@ -1,11 +1,19 @@
 import {SxProps, Theme} from "@mui/material";
 
+import {pageWidth, layout} from "../../../constants";
+
 const page:SxProps<Theme> = {
     display: 'grid',
     gridTemplateColumns: '1fr 3fr',
     overflow: 'hidden',
     borderRadius: 2,
     position: "relative",
+    maxWidth: pageWidth,
+
+    [layout.printer]: {
+        borderRadius: 0,
+        boxShadow: "none",
+    }
 } as const
 
 const header: {container: SxProps<Theme>; actions: SxProps<Theme>; name: SxProps<Theme>; goals: SxProps<Theme> } ={
@@ -24,6 +32,10 @@ const header: {container: SxProps<Theme>; actions: SxProps<Theme>; name: SxProps
 
         display: "flex",
         gap: 2,
+
+        [layout.printer]: {
+            display: 'none',
+        }
     },
     name: {
         position: "absolute",
@@ -52,7 +64,7 @@ const columns: { info: SxProps<Theme>; main: SxProps<Theme> } = {
         flexDirection: "column",
         gap: 10,
         p: 5,
-        pt: '250px',
+        pt: '220px',
     },
 } as const
 
