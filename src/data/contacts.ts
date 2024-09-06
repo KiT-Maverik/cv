@@ -4,7 +4,14 @@ export enum CONTACTS {
     TELEGRAM = 'Telegram',
 }
 
-export const contacts = {
+export const contactsList = Object.values(CONTACTS);
+
+interface Contact {
+    label: string
+    link: string
+}
+
+export const contacts: {[key in CONTACTS]: Contact} = {
     [CONTACTS.EMAIL]: {
         label: 'mykola.orlov79@gmail.com',
         link: 'mykola.orlov79@gmail.com',
