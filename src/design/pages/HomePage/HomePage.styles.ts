@@ -9,6 +9,7 @@ const page:SxProps<Theme> = {
     borderRadius: 2,
     position: "relative",
     maxWidth: pageWidth,
+    userSelect: "none",
 
     [layout.printer]: {
         borderRadius: 0,
