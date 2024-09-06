@@ -1,5 +1,5 @@
 import {SxProps} from "@mui/material";
-import {Theme} from "@mui/material/styles";
+import {Theme, alpha} from "@mui/material/styles";
 import {commonStyles} from "styles";
 
 const container: SxProps<Theme> = {
@@ -20,6 +20,11 @@ const portfolio: { container: SxProps<Theme>; item: SxProps<Theme>; icon: SxProp
         alignItems: "center",
         fontSize: 32,
         p: 5,
+        borderRadius: 2,
+
+        ':hover': {
+            backgroundColor: theme => alpha(theme.palette.text.primary, theme.palette.action.hoverOpacity)
+        }
     },
     icon: {
         display: "flex",
