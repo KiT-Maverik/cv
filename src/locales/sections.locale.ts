@@ -10,7 +10,7 @@ interface Headers {
   workExperience: string;
 }
 
-export const headers: { [key in LOCALE]: Headers } = {
+export const sections: { [key in LOCALE]: Headers } = {
   [LOCALE.UA]: {
     contacts: "Контакти",
     education: "Освіта",
@@ -30,4 +30,3 @@ export const headers: { [key in LOCALE]: Headers } = {
     workExperience: "Work Experience",
   },
 };
-
