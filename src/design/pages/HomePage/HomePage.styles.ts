@@ -28,12 +28,12 @@ const header: {container: SxProps<Theme>; actions: SxProps<Theme>; name: SxProps
     name: {
         position: "absolute",
         bottom: 0,
-        left: 400,
+        left: 315,
     },
     goals: {
         position: "absolute",
         bottom: -30,
-        left: 400,
+        left: 320,
     }
 } as const
 
