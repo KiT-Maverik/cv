@@ -3,8 +3,11 @@ import {Box, Typography} from "@mui/material";
 
 import style from './Profile.styles'
 import React from "react";
+import {useData} from "../../../hooks";
 
 export const Profile = () => {
+    const {personal} = useData()
+
     return (
         <Box sx={style.container}>
             <Typography variant='h2' sx={style.header}>
@@ -12,7 +15,7 @@ export const Profile = () => {
                 Profile
             </Typography>
             <Typography textAlign='justify'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. Ut enim ad minim veniam quis nostrud exercitation.
+                {personal.profile}
             </Typography>
         </Box>
     )
