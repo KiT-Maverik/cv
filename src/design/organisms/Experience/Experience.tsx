@@ -17,14 +17,16 @@ export const Experience = () => {
             <Box sx={style.experience.container}>
                 {experience.map(({start, end, responsibilities, company, position}) => (
                     <>
-                        <Stack sx={style.experience.period.container}>
-                            <Typography sx={style.experience.period.item}>{end}</Typography>
-                            <Typography sx={style.experience.period.item}>-</Typography>
-                            <Typography sx={style.experience.period.item}>{start}</Typography>
-                        </Stack>
                         <Divider orientation='vertical' sx={style.experience.divider}/>
                         <Box>
-                            <Typography variant='h3' fontWeight={700}>{`${company} || ${position}`}</Typography>
+                            <Box sx={{display: 'flex', gap: 2, alignItems: 'center'}}>
+                                <Typography variant='h3' fontWeight={700}>
+                                    {`${company} || `}
+                                </Typography>
+                                <Typography>
+                                    {`${position}, ${start} - ${end}`}
+                                </Typography>
+                            </Box>
                             <Box component='ul' sx={style.experience.description.responsibility.list}>
                                 {responsibilities.map(item => <Typography component='li' sx={style.experience.description.responsibility.item}>{item[locale]}</Typography>)}
                             </Box>

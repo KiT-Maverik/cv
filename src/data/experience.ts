@@ -16,11 +16,11 @@ export const experience: Experience[] = [
             position: 'Code Master',
             responsibilities: [
                 {
-                    en : 'Design and architect complex frontend solutions using React, ensuring scalability, performance, and maintainability.',
+                    en : 'Design and architect complex frontend solutions.',
                     ua : 'Проектування та створення складних рішень фронтенду з використанням React, забезпечуючи масштабованість, продуктивність та підтримуваність.',
                 },
                 {
-                    en : 'Take a lead role in frontend development projects, guiding junior developers, making technical decisions, and ensuring best practices are followed.',
+                    en : 'Take a lead role in frontend development projects, guiding junior developers, ensuring best practices are followed.',
                     ua : 'Брати лідерську роль у проектах розробки фронтенду, надавати настанови молодшим розробникам, приймати технічні рішення та контролювати дотримання  кращих практик.',
                 },
                 {
@@ -36,16 +36,16 @@ export const experience: Experience[] = [
             position: 'Software Development Engineer',
             responsibilities: [
                 {
-                    en : 'Perform technical assessment of mockups/wireframes and architectural designs/specifications',
+                    en : 'Perform technical assessment of designs and specifications',
                     ua : 'Технічний аналіз макетів та прототипів, створення на їх основі архітектурних специфікацій',
                 },
                 {
-                    en : 'Translate complex functional, technical and business requirements into architectural designs',
+                    en : 'Translate business requirements into technical specifications',
                     ua : 'Робота зі складними функціональними, технічними, архітектурними вимогами' +
                         ' та їх імплементація у архітектурних специфікаціяї',
                 },
                 {
-                    en : 'Helping other team members grow as engineers through code review, pairing, and mentoring',
+                    en : 'Helping team members grow through code review, and mentoring',
                     ua : 'Підтримка розвитку інших членів команди через участь у код-ревʼю, парних активностях' +
                         ' та менторингу',
                 },
@@ -58,14 +58,12 @@ export const experience: Experience[] = [
             position: 'Software Development Engineer',
             responsibilities: [
                 {
-                    en : 'Participate in all SDLC stages including estimating, technical design,' +
-                        ' and application implementation',
+                    en : 'Participate in all SDLC stages',
                     ua : 'Приймати участь у розробці продукту на всіх етапах SDLC, ' +
                         'виконуючи оцінку, проектування та розробку нового функціоналу',
                 },
                 {
-                    en : 'Contribute to quality control - participate in code review, document ' +
-                        'developed solutions, own processes.',
+                    en : 'Participate in code review, document developed solutions',
                     ua : 'Вносити свій вклад у якість продукту: ' +
                         'проводити ревʼю коду, документувати новий функціонал та процеси',
                 },

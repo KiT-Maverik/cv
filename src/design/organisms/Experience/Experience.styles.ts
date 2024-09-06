@@ -20,7 +20,7 @@ const experience: {
 } = {
     container: {
         display: "grid",
-        gridTemplateColumns: "auto auto auto",
+        gridTemplateColumns: "auto auto",
         rowGap: 5,
         columnGap: 5,
     },
