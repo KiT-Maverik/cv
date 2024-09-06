@@ -11,16 +11,22 @@ const header: SxProps<Theme> = commonStyles.header
 
 const portfolio: { container: SxProps<Theme>; item: SxProps<Theme>; icon: SxProps<Theme> } = {
     container:{
-        display: "flex",
-        gap: 3,
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr",
     },
     item: {
-        flexGrow: 1,
+        display: "flex",
+        gap: 3,
+        alignItems: "center",
         fontSize: 32,
+        p: 5,
     },
     icon: {
+        display: "flex",
+        alignItems: "center",
         width: 36,
         aspectRatio: 1,
+        fill: theme => theme.palette.text.primary,
     }
 }
 

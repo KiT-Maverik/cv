@@ -1,5 +1,5 @@
 import PortfolioIcon from '@mui/icons-material/DiamondOutlined';
-import {Box, Button, SvgIcon, Typography} from "@mui/material";
+import {Box, ButtonBase, Typography} from "@mui/material";
 
 import {PORTFOLIO, portfolioTypes} from "data";
 import {GithubIcon, AIIcon, ICodeThisIcon, LeetCodeIcon} from "design/atoms";
@@ -20,16 +20,19 @@ export const Portfolio = () => {
     return (
         <Box sx={style.container}>
             <Typography variant='h2' sx={style.header}><PortfolioIcon/>Portfolio</Typography>
-            {portfolioTypes.map(item => (
-                <Button
-                    color='inherit'
-                    startIcon={<SvgIcon>{icons[item]}</SvgIcon>}
-                    onClick={() => console.log(portfolio[item].link)}
-                >
-                     {portfolio[item].label}
-                </Button>
-            ))
-            }
+            <Box sx={style.portfolio.container}>
+                {portfolioTypes.map(item => (
+                    <ButtonBase
+                        color='inherit'
+                        sx={style.portfolio.item}
+                        onClick={() => console.log(portfolio[item].link)}
+                    >
+                        <Box sx={style.portfolio.icon}>{icons[item]}</Box>
+                        {portfolio[item].label}
+                    </ButtonBase>
+                ))
+                }
+            </Box>
         </Box>
     )
 }
