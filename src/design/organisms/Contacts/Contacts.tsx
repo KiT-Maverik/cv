@@ -5,12 +5,13 @@ import {Box, Button, Stack, Typography} from "@mui/material";
 import React, {ReactNode, useMemo} from "react";
 
 import {CONTACTS} from "data";
-import {useData} from "hooks";
+import {useCopyToClipboard, useData} from "hooks";
 
 import style from './Contacts.styles'
 
 export const Contacts = () => {
     const {contacts} = useData()
+    const {copy} = useCopyToClipboard()
 
     const icon = useMemo<{[key in CONTACTS] : ReactNode}>(() => ({
         [CONTACTS.EMAIL]: <EmailIcon/>,
@@ -24,7 +25,13 @@ export const Contacts = () => {
                 Contacts
             </Typography>
                 {Object.values(CONTACTS).map(item =>
-                    <Button startIcon={icon[item]} color='inherit'>{contacts[item].label}</Button>
+                    <Button
+                        startIcon={icon[item]}
+                        color='inherit'
+                        onClick={() => copy(contacts[item].link)}
+                    >
+                        {contacts[item].label}
+                    </Button>
                 )}
         </Box>
     )
