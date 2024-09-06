@@ -7,7 +7,7 @@ import {
   reference,
   contacts,
   skills,
-  goals,
+  goalsData,
   portfolio,
 } from "data";
 import { AppSettings } from "../App";
@@ -20,7 +20,7 @@ export const useData = () => {
       contacts,
       education: educationData[locale],
       experience,
-      goals,
+      goals: goalsData[locale],
       personal: personalData[locale],
       portfolio,
       reference,
