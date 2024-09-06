@@ -9,13 +9,13 @@ import ReactToPrint from 'react-to-print';
 import {AppSettings} from "App";
 import {LOCALE} from "../../../constants";
 import {Contacts, Education, Experience, Portfolio, Profile, QR, Reference, Skills} from "design/organisms";
-import {useData, useRawText} from "hooks";
+import {useData, useRawData} from "hooks";
 
 import style from './HomePage.styles'
 
 export function HomePage() {
     const {personal, goals} = useData()
-    const {rawText} = useRawText()
+    const {rawText} = useRawData()
     const { locale, setLocale } = useContext(AppSettings)
 
     const cvRef = useRef<HTMLDivElement>(null);
