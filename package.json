@@ -7,7 +7,8 @@
     "app:build": "react-scripts build",
     "app:test": "react-scripts test",
     "config:eject": "react-scripts eject",
-    "server:start": "json-server server/db.json server/routes.json -p 3001"
+    "server:start": "json-server server/db.json server/routes.json -p 3001",
+    "lint:fix": "eslint src --fix"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
@@ -34,6 +35,16 @@
     "web-vitals": "^2.1.4",
     "zod": "^3.23.8"
   },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^9.9.1",
+    "eslint-config-react": "^1.1.7",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-react": "^7.35.2",
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.4.0"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -51,13 +62,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.9.1",
-    "@types/eslint__js": "^8.42.3",
-    "eslint": "^9.9.1",
-    "eslint-config-react": "^1.1.7",
-    "eslint-config-react-app": "^7.0.1",
-    "typescript-eslint": "^8.3.0"
   }
 }
