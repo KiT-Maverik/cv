@@ -66,7 +66,7 @@ export function HomePage() {
                     <Portfolio/>
                 </Box>
             </Paper>
-            <Modal open={showModal} sx={style.modal.overlay}>
+            <Modal open={showModal} sx={style.modal.overlay} onClose={() => setShowModal(false)}>
                 <Box sx={style.modal.container}>
                     <Box>
                         <Alert severity='info'>For recruiters with care in mind 😽</Alert>
