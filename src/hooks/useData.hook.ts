@@ -1,6 +1,6 @@
 import {useMemo} from "react";
 
-import {education, experience, personal, reference, contacts, skills, goals} from "data";
+import {education, experience, personal, reference, contacts, skills, goals, portfolio} from "data";
 
 export const useData = () => {
     return useMemo(() => ({
@@ -9,6 +9,7 @@ export const useData = () => {
         experience,
         goals,
         personal,
+        portfolio,
         reference,
         skills,
     }), []);
