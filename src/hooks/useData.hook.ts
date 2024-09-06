@@ -1,16 +1,19 @@
-import {useMemo} from "react";
+import {useContext, useMemo} from "react";
 
-import {education, experience, personal, reference, contacts, skills, goals, portfolio} from "data";
+import {educationData, experience, personalData, reference, contacts, skills, goals, portfolio} from "data";
+import {AppSettings} from "../App";
 
 export const useData = () => {
+    const { locale } = useContext(AppSettings)
+
     return useMemo(() => ({
         contacts,
-        education,
+        education: educationData[locale],
         experience,
         goals,
-        personal,
+        personal: personalData[locale],
         portfolio,
         reference,
         skills,
-    }), []);
+    }), [locale]);
 }
