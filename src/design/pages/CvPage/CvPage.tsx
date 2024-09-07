@@ -27,15 +27,16 @@ import {
   Reference,
   Skills,
 } from "design/organisms";
-import { useData, useRawData } from "hooks";
+import { useData, useLocale, useRawData } from "hooks";
 
-import style from "./HomePage.styles";
+import style from "./CvPage.styles";
 
-export function HomePage() {
+export function CvPage() {
   const [showModal, setShowModal] = useState(false);
   const { personal, goals } = useData();
   const { rawText } = useRawData();
   const { locale, setLocale } = useContext(AppSettings);
+  const { messages } = useLocale();
 
   const cvRef = useRef<HTMLDivElement>(null);
 
@@ -55,13 +56,17 @@ export function HomePage() {
             {goals.join(" / ")}
           </Typography>
           <Box sx={style.header.actions}>
-            <Tooltip title="Translate EN/UA" arrow onClick={handleLocaleChange}>
+            <Tooltip
+              title={messages.tooltip.translate}
+              arrow
+              onClick={handleLocaleChange}
+            >
               <IconButton>
                 <TranslateIcon />
               </IconButton>
             </Tooltip>
             <Tooltip
-              title="Export as text"
+              title={messages.tooltip.exportText}
               arrow
               onClick={() => setShowModal(true)}
             >
@@ -71,7 +76,7 @@ export function HomePage() {
             </Tooltip>
             <ReactToPrint
               trigger={() => (
-                <Tooltip title="Print PDF" arrow>
+                <Tooltip title={messages.tooltip.print} arrow>
                   <IconButton>
                     <PrintIcon />
                   </IconButton>
