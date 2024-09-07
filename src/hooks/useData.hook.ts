@@ -1,5 +1,6 @@
 import { useContext, useMemo } from "react";
 
+import { AppSettings } from "App";
 import {
   educationData,
   experience,
@@ -10,7 +11,6 @@ import {
   goalsData,
   portfolio,
 } from "data";
-import { AppSettings } from "../App";
 
 export const useData = () => {
   const { locale } = useContext(AppSettings);
@@ -19,7 +19,7 @@ export const useData = () => {
     () => ({
       contacts,
       education: educationData[locale],
-      experience,
+      experience: experience(locale),
       goals: goalsData[locale],
       personal: personalData[locale],
       portfolio,

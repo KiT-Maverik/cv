@@ -1,15 +1,13 @@
 import WorkIcon from "@mui/icons-material/WorkOutlineOutlined";
 import { Box, Divider, Typography } from "@mui/material";
-import React, { useContext } from "react";
+import React from "react";
 
-import { AppSettings } from "App";
 import { useData, useLocale } from "hooks";
 
 import style from "./Experience.styles";
 
 export const Experience = () => {
   const { experience } = useData();
-  const { locale } = useContext(AppSettings);
   const { sections } = useLocale();
 
   return (
@@ -36,11 +34,11 @@ export const Experience = () => {
                 >
                   {responsibilities.map((item) => (
                     <Typography
-                      key={item.en}
+                      key={item}
                       component="li"
                       sx={style.experience.description.responsibility.item}
                     >
-                      {item[locale]}
+                      {item}
                     </Typography>
                   ))}
                 </Box>
