@@ -11,12 +11,12 @@ export const personalData: { [key in LOCALE]: PersonalData } = {
     firstname: "Nick",
     lastname: "Orlov",
     profile:
-      "Experienced Software Development Engineer with over 12 years in IT, specializing in building scalable front-end architectures. Proficient in React, TypeScript, and various modern libraries and frameworks like NextJS, Material UI, and Tailwind. Known for leading projects, mentoring junior developers, and consistently improving code quality, resulting in significant performance gains and reduced bug counts. Passionate about solving complex problems.",
+      "Experienced Software Development Engineer with over 12 years in IT, specializing in building scalable front-end architectures. Proficient in React, TypeScript, and various modern libraries and frameworks like NextJS, Material UI, and Tailwind. AI enthusiast obsessed with optimising performance with cutting edge prompts.",
   },
   [LOCALE.UA]: {
     firstname: "Нік",
     lastname: "Орлов",
     profile:
-      "Досвідчений спеціаліст з понад 12-річним досвідом в ІТ. Спеціалізуюсь на створенні масштабованих фронтенд-архітектур. Володію React, TypeScript та сучасними бібліотеками і фреймворками, такими як NextJS, Material UI та Tailwind. Відомий керівництвом проєктами, наставництвом молодших розробників і постійним підвищенням якості коду, що значно покращує продуктивность та знижує кількість помилок. Обожнюю вирішувати складні завдання.",
+      "Досвідчений спеціаліст з понад 12-річним досвідом в ІТ. Спеціалізуюсь на створенні масштабованих фронтенд-архітектур. Володію React, TypeScript та сучасними бібліотеками і фреймворками, такими як NextJS, Material UI та Tailwind. AI ентузіаст, захоплююсь оптимізацією продуктивності через розробку помічників.",
   },
 };
