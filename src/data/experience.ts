@@ -51,9 +51,9 @@ const responsibilities: Responsibilities = {
       "Front End adjustment for testing needs",
     ],
     [COMPANY.BY_OWLS]: [
-      "Design and architect complex frontend solutions.",
-      "Take a lead role in frontend development projects, guiding junior developers, ensuring best practices are followed.",
-      "Maintain and improve the codebase, ensuring code quality through code reviews, refactoring, and optimizing performance.",
+      "Design and architect complex frontend solutions",
+      "Take a lead role in frontend development projects, guiding junior developers, ensuring best practices are followed",
+      "Maintain and improve the codebase, ensuring code quality through code reviews, refactoring, and optimizing performance",
     ],
     [COMPANY.TACANS]: [
       "Perform technical assessment of designs and specifications",
@@ -63,19 +63,19 @@ const responsibilities: Responsibilities = {
   },
   [LOCALE.UA]: {
     [COMPANY.ALTERYX]: [
-      "Приймати участь у розробці продукту на всіх етапах SDLC, виконуючи оцінку, проектування та розробку нового функціоналу",
-      "Вносити свій вклад у якість продукту: проводити ревʼю коду, документувати новий функціонал та процеси",
+      "Приймати участь у розробці продукту на всіх етапах SDLC",
+      "Проводити ревʼю коду, документувати новий функціонал",
       "Підлаштування фронтенду для тестування",
     ],
     [COMPANY.BY_OWLS]: [
-      "Проектування та створення складних рішень фронтенду з використанням React, забезпечуючи масштабованість, продуктивність та підтримуваність.",
-      "Брати лідерську роль у проектах розробки фронтенду, надавати настанови молодшим розробникам, приймати технічні рішення та контролювати дотримання кращих практик.",
-      "Підтримка та вдосконалення кодової бази, забезпечення якості коду через код ревʼю, рефакторинг та оптимізацію продуктивності.",
+      "Проектування та створення складних рішень фронтенду",
+      "Брати лідерську роль у проектах розробки фронтенду, менторити молодших розробників, контролювати дотримання кращих практик",
+      "Підтримка та вдосконалення кодової бази, забезпечення якості коду через код ревʼю, рефакторинг та оптимізацію продуктивності",
     ],
     [COMPANY.TACANS]: [
-      "Технічний аналіз макетів та прототипів, створення на їх основі архітектурних специфікацій",
-      "Робота зі складними функціональними, технічними, архітектурними вимогами та їх імплементація у архітектурних специфікаціяї",
-      "Підтримка розвитку інших членів команди через участь у код-ревʼю, парних активностях та менторингу",
+      "Технічний аналіз макетів та архітектурних специфікацій",
+      "Робота з технічними вимогами та їх імплементація у специфікаціях",
+      "Підтримка розвитку інших членів команди через участь у код-ревʼю та менторингу",
     ],
   },
 };
