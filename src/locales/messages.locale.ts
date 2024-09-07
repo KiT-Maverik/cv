@@ -1,41 +1,53 @@
 import { LOCALE } from "../constants";
 
 interface MessagesLocale {
+  forRecruiters: string;
+  operations: {
+    copyText: string;
+  };
+  status: {
+    error: string;
+    copied: string;
+  };
   tooltip: {
     print: string;
     exportText: string;
     translate: string;
     copyEmail: string;
   };
-  operations: {
-    copyText: string;
-  };
-  forRecruiters: string;
 }
 
 export const messages: { [key in LOCALE]: MessagesLocale } = {
   [LOCALE.EN]: {
-    tooltip: {
-      print: "Print PDF",
-      exportText: "Export as Text",
-      translate: "Translate UA\\EN",
-      copyEmail: "Click to Copy Email",
-    },
+    forRecruiters: "For recruiters with care 😽",
     operations: {
       copyText: "Copy Text",
     },
-    forRecruiters: "For recruiters with care 😽",
+    status: {
+      copied: "Copied to Clipboard",
+      error: "Something went wrong",
+    },
+    tooltip: {
+      copyEmail: "Click to Copy Email",
+      exportText: "Export as Text",
+      print: "Print PDF",
+      translate: "Translate UA\\EN",
+    },
   },
   [LOCALE.UA]: {
-    tooltip: {
-      print: "Експортувати як PDF",
-      exportText: "Експортувати як текст",
-      translate: "Перекласти UA\\EN",
-      copyEmail: "Клацніть, щоб скопіювати email",
-    },
+    forRecruiters: "Рекрутерам, з турботою 😽",
     operations: {
       copyText: "Скопіювати Текст",
     },
-    forRecruiters: "Рекрутерам, з турботою 😽",
+    status: {
+      copied: "Скопійовано!",
+      error: "Щось пішло не так",
+    },
+    tooltip: {
+      copyEmail: "Клацніть, щоб скопіювати email",
+      exportText: "Експортувати як текст",
+      print: "Експортувати як PDF",
+      translate: "Перекласти UA\\EN",
+    },
   },
 };
