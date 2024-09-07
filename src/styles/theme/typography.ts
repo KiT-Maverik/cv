@@ -1,5 +1,5 @@
 import { TypographyOptions } from "@mui/material/styles/createTypography";
-import { converter } from "utils/converters/pxToRem.utils";
+import { converter } from "utils/converters/pxToRem.util";
 
 const fontSize = 16;
 
