@@ -1,5 +1,5 @@
 import PortfolioIcon from "@mui/icons-material/DiamondOutlined";
-import {Box, ButtonBase, Link, Typography} from "@mui/material";
+import {Box, ButtonBase, Typography} from "@mui/material";
 
 import { PORTFOLIO, portfolioTypes } from "data";
 import { GithubIcon, AIIcon, ICodeThisIcon, LeetCodeIcon } from "design/atoms";
