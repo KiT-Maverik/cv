@@ -7,6 +7,10 @@ interface MessagesLocale {
     translate: string;
     copyEmail: string;
   };
+  operations: {
+    copyText: string;
+  };
+  forRecruiters: string;
 }
 
 export const messages: { [key in LOCALE]: MessagesLocale } = {
@@ -17,6 +21,10 @@ export const messages: { [key in LOCALE]: MessagesLocale } = {
       translate: "Translate UA\\EN",
       copyEmail: "Click to Copy Email",
     },
+    operations: {
+      copyText: "Copy Text",
+    },
+    forRecruiters: "For recruiters with care 😽",
   },
   [LOCALE.UA]: {
     tooltip: {
@@ -25,5 +33,9 @@ export const messages: { [key in LOCALE]: MessagesLocale } = {
       translate: "Перекласти UA\\EN",
       copyEmail: "Клацніть, щоб скопіювати email",
     },
+    operations: {
+      copyText: "Скопіювати Текст",
+    },
+    forRecruiters: "Рекрутерам, з турботою 😽",
   },
 };
