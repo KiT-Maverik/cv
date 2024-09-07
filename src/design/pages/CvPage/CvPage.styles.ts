@@ -42,6 +42,7 @@ const modal: {
   },
   content: {
     width: 1,
+    height: 300,
   },
   actions: {
     display: "flex",
