@@ -11,11 +11,12 @@ export const personalData: { [key in LOCALE]: PersonalData } = {
     firstname: "Nick",
     lastname: "Orlov",
     profile:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. Ut enim ad minim veniam quis nostrud exercitation.",
+      "Experienced Software Development Engineer with over 12 years in IT, specializing in building scalable front-end architectures. Proficient in React, TypeScript, and various modern libraries and frameworks like NextJS, Material UI, and Tailwind. Known for leading projects, mentoring junior developers, and consistently improving code quality, resulting in significant performance gains and reduced bug counts. Passionate about solving complex problems.",
   },
   [LOCALE.UA]: {
     firstname: "Нік",
     lastname: "Орлов",
-    profile: "А баба галамага.",
+    profile:
+      "Досвідчений спеціаліст з понад 12-річним досвідом в ІТ. Спеціалізуюсь на створенні масштабованих фронтенд-архітектур. Володію React, TypeScript та сучасними бібліотеками і фреймворками, такими як NextJS, Material UI та Tailwind. Відомий керівництвом проєктами, наставництвом молодших розробників і постійним підвищенням якості коду, що значно покращує продуктивность та знижує кількість помилок. Обожнюю вирішувати складні завдання.",
   },
 };
