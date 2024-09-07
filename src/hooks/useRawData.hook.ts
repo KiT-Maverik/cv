@@ -1,19 +1,20 @@
 import { contactsList, portfolioTypes } from "data";
-import { useData } from "hooks";
+import { useData, useLocale } from "hooks";
 
 export const useRawData = () => {
   const data = useData();
+  const { sections } = useLocale();
 
   const rawData = [
-    `Name: ${data.personal.firstname} ${data.personal.lastname}`,
-    `Goals: ${data.goals.join(" / ")}`,
-    `Profile: ${data.personal.profile}`,
-    `Skills: ${data.skills.join(", ")}`,
-    `Reference:\n${data.reference.map(({ email, name, company, position }) => `${name}, ${position} at ${company}. Email: ${email}`).join("\n")}`,
-    `Portfolio:\n${portfolioTypes.map((item) => `${data.portfolio[item].label}: ${data.portfolio[item].link}`).join("\n")}`,
-    `Experience:\n${data.experience.map(({ company, position, start, end, responsibilities }) => `${position} at ${company}, ${start} - ${end}\n${responsibilities.map((item) => item).join("\n")}`).join("\n")}`,
-    `Education:\n${data.education.map(({ facility, specialisation }) => `${facility}, ${specialisation}`).join("\n")}`,
-    `Contacts:\n${contactsList.map((item) => `${data.contacts[item].link}`).join("\n")}`,
+    `${sections.name}: ${data.personal.firstname} ${data.personal.lastname}`,
+    `${sections.goals}: ${data.goals.join(" / ")}`,
+    `${sections.profile}: ${data.personal.profile}`,
+    `${sections.skills}: ${data.skills.join(", ")}`,
+    `${sections.reference}:\n${data.reference.map(({ email, name, company, position }) => `${name} || ${company} \\\\ ${position}. Email: ${email}`).join("\n")}`,
+    `${sections.portfolio}:\n${portfolioTypes.map((item) => `${data.portfolio[item].label}: ${data.portfolio[item].link}`).join("\n")}`,
+    `${sections.workExperience}:\n${data.experience.map(({ company, position, start, end, responsibilities }) => `${position} || ${company}, ${start} - ${end}\n${responsibilities.map((item) => item).join("\n")}`).join("\n")}`,
+    `${sections.education}:\n${data.education.map(({ facility, specialisation }) => `${facility}, ${specialisation}`).join("\n")}`,
+    `${sections.contacts}:\n${contactsList.map((item) => `${data.contacts[item].link}`).join("\n")}`,
   ];
 
   return { rawText: rawData.join("\n\n") };
