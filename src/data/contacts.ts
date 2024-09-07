@@ -23,7 +23,7 @@ export const contacts: { [key in CONTACTS]: Contact } = {
   },
   [CONTACTS.TELEGRAM]: {
     label: "Telegram",
-    link: "https://t.me/@mykolaorlov",
+    link: "@mykolaorlov",
   },
   [CONTACTS.WEBSITE]: {
     label: "WWW",
