@@ -1,7 +1,8 @@
 import TelegramIcon from "@mui/icons-material/SendRounded";
 import EmailIcon from "@mui/icons-material/MailOutlineRounded";
 import LinkedinIcon from "@mui/icons-material/AccountBoxRounded";
-import { Box, Button, Stack, Typography } from "@mui/material";
+import WebsiteIcon from "@mui/icons-material/LanguageRounded";
+import { Box, Button, Typography } from "@mui/material";
 import React, { ReactNode, useMemo } from "react";
 
 import { CONTACTS } from "data";
@@ -19,6 +20,7 @@ export const Contacts = () => {
       [CONTACTS.EMAIL]: <EmailIcon />,
       [CONTACTS.LINKED_IN]: <LinkedinIcon />,
       [CONTACTS.TELEGRAM]: <TelegramIcon />,
+      [CONTACTS.WEBSITE]: <WebsiteIcon />,
     }),
     [],
   );

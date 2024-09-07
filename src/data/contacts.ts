@@ -2,6 +2,7 @@ export enum CONTACTS {
   EMAIL = "Email",
   LINKED_IN = "Linked In",
   TELEGRAM = "Telegram",
+  WEBSITE = "Web site",
 }
 
 export const contactsList = Object.values(CONTACTS);
@@ -23,5 +24,9 @@ export const contacts: { [key in CONTACTS]: Contact } = {
   [CONTACTS.TELEGRAM]: {
     label: "Telegram",
     link: "https://t.me/@mykolaorlov",
+  },
+  [CONTACTS.WEBSITE]: {
+    label: "WWW",
+    link: "https://kit-maverik.github.io/cv/",
   },
 };
