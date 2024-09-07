@@ -10,8 +10,9 @@ const container: SxProps<Theme> = {
 const modal: {
   overlay: SxProps<Theme>;
   container: SxProps<Theme>;
+  header: { container: SxProps<Theme>; alert: SxProps<Theme> };
   content: SxProps<Theme>;
-  header: SxProps<Theme>;
+  actions: SxProps<Theme>;
 } = {
   overlay: {
     display: "flex",
@@ -22,16 +23,29 @@ const modal: {
     backgroundColor: (theme) => theme.palette.background.paper,
     borderRadius: 3,
     p: 5,
+    width: "90%",
+    maxWidth: 800,
+    display: "flex",
+    flexDirection: "column",
+    gap: 3,
   },
   header: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    gap: 2,
+    container: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      gap: 2,
+    },
+    alert: {
+      flexGrow: 1,
+    },
   },
   content: {
-    width: 300,
-    height: 300,
+    width: 1,
+  },
+  actions: {
+    display: "flex",
+    justifyContent: "center",
   },
 } as const;
 

@@ -1,10 +1,12 @@
 import CloseIcon from "@mui/icons-material/CloseRounded";
+import CopyIcon from "@mui/icons-material/ContentCopyRounded";
 import PrintIcon from "@mui/icons-material/LocalPrintshop";
 import TranslateIcon from "@mui/icons-material/Translate";
 import TextIcon from "@mui/icons-material/Assignment";
 import {
   Alert,
   Box,
+  Button,
   Container,
   IconButton,
   Modal,
@@ -27,7 +29,7 @@ import {
   Reference,
   Skills,
 } from "design/organisms";
-import { useData, useLocale, useRawData } from "hooks";
+import { useCopyToClipboard, useData, useLocale, useRawData } from "hooks";
 
 import style from "./CvPage.styles";
 
@@ -35,6 +37,7 @@ export function CvPage() {
   const [showModal, setShowModal] = useState(false);
   const { personal, goals } = useData();
   const { rawText } = useRawData();
+  const { copy } = useCopyToClipboard();
   const { locale, setLocale } = useContext(AppSettings);
   const { messages } = useLocale();
 
@@ -105,14 +108,25 @@ export function CvPage() {
         onClose={() => setShowModal(false)}
       >
         <Box sx={style.modal.container}>
-          <Box>
-            <Alert severity="info">For recruiters with care in mind 😽</Alert>
+          <Box sx={style.modal.header.container}>
+            <Alert severity="info" sx={style.modal.header.alert}>
+              {messages.forRecruiters}
+            </Alert>
             <IconButton onClick={() => setShowModal(false)}>
               <CloseIcon />
             </IconButton>
           </Box>
           <Box component="textarea" disabled sx={style.modal.content}>
             {rawText}
+          </Box>
+          <Box sx={style.modal.actions}>
+            <Button
+              variant="contained"
+              startIcon={<CopyIcon />}
+              onClick={() => copy(rawText)}
+            >
+              {messages.operations.copyText}
+            </Button>
           </Box>
         </Box>
       </Modal>
