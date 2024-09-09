@@ -4,10 +4,10 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { CssBaseline } from "@mui/material";
+import {CvPage} from "design/pages";
 
 import { ThemeProvider } from "./utilitary/ThemeProvider/ThemeProvider";
 import { ToastProvider } from "./utilitary/ToastProvider/ToastProvider";
-import { Router } from "./utilitary/Router/Router";
 import { LOCALE } from "../constants";
 
 interface AppSettings {
@@ -32,7 +32,7 @@ export const App = () => {
       <CssBaseline />
       <ThemeProvider>
         <ToastProvider>
-          <Router />
+          <CvPage />
         </ToastProvider>
       </ThemeProvider>
     </AppSettings.Provider>

@@ -5,6 +5,9 @@ import { pageWidth, layout } from "../../../constants";
 const container: SxProps<Theme> = {
   display: "flex",
   justifyContent: "center",
+  minHeight: "100vh",
+  p: 5,
+  background: (theme) => theme.palette.background.surface,
 } as const;
 
 const modal: {
