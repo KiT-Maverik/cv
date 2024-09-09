@@ -1,8 +1,8 @@
 import PortfolioIcon from "@mui/icons-material/DiamondOutlined";
-import {Box, ButtonBase, Typography} from "@mui/material";
+import { Box, ButtonBase, Typography } from "@mui/material";
 
 import { PORTFOLIO, portfolioTypes } from "data";
-import { GithubIcon, AIIcon, ICodeThisIcon, LeetCodeIcon } from "design/atoms";
+import { GithubIcon, AIIcon, ICodeThisIcon, LeetCodeIcon } from "assets";
 import style from "./Portfolio.styles";
 import { useData, useLocale } from "hooks";
 import React, { useMemo } from "react";
