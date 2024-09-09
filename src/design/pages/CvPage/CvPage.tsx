@@ -7,7 +7,6 @@ import {
   Alert,
   Box,
   Button,
-  Container,
   IconButton,
   Modal,
   Paper,
@@ -49,7 +48,7 @@ export function CvPage() {
   };
 
   return (
-    <Container sx={style.container}>
+    <Box sx={style.container}>
       <Paper sx={style.cv} ref={cvRef}>
         <Box sx={style.header.container}>
           <Typography variant="h1" sx={style.header.name}>
@@ -130,6 +129,6 @@ export function CvPage() {
           </Box>
         </Box>
       </Modal>
-    </Container>
+    </Box>
   );
 }
