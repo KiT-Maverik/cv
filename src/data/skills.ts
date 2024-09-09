@@ -12,4 +12,5 @@ export const skills = [
   "React query",
   "Recharts",
   "MERN",
+  "Zod",
 ];
