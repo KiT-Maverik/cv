@@ -4,12 +4,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "app:deploy": "gh-pages -d build",
     "app:build": "react-scripts build",
     "app:start": "react-scripts start",
     "app:test": "react-scripts test",
     "config:eject": "react-scripts eject",
     "lint:fix": "eslint src --fix",
+    "deploy": "gh-pages -d build",
     "predeploy": "npm run app:build"
   },
   "dependencies": {
@@ -29,7 +29,7 @@
     "react-scripts": "5.0.1",
     "react-to-print": "^2.15.1",
     "typescript": "^5.5.4",
-    "web-vitals": "^2.1.4",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
