@@ -10,7 +10,6 @@
     "app:test": "react-scripts test",
     "config:eject": "react-scripts eject",
     "lint:fix": "eslint src --fix",
-    "server:start": "json-server server/db.json server/routes.json -p 3001",
     "predeploy": "npm run app:build"
   },
   "dependencies": {
