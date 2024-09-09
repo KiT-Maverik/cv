@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kit-maverik.github.io/cv/",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -8,7 +9,9 @@
     "app:test": "react-scripts test",
     "config:eject": "react-scripts eject",
     "server:start": "json-server server/db.json server/routes.json -p 3001",
-    "lint:fix": "eslint src --fix"
+    "lint:fix": "eslint src --fix",
+    "predeploy": "npm run app:build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
@@ -44,6 +47,7 @@
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.2",
+    "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
     "prettier": "3.3.3",
     "typescript-eslint": "^8.4.0"
