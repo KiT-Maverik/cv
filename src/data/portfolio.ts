@@ -15,18 +15,18 @@ interface Portfolio {
 export const portfolio: { [key in PORTFOLIO]: Portfolio } = {
   [PORTFOLIO.AI]: {
     label: "AI Prompts",
-    link: "https://gist.github.com/KiT-Maverik",
+    link: "https://bit.ly/3XAjEGN",
   },
   [PORTFOLIO.GITHUB]: {
     label: "GitHub",
-    link: "https://github.com/KiT-Maverik",
+    link: "https://bit.ly/3AVV9v7",
   },
   [PORTFOLIO.I_CODE_THIS]: {
     label: "I Code This",
-    link: "https://icodethis.com/KiT_Gart",
+    link: "https://bit.ly/3AZ68Uw",
   },
   [PORTFOLIO.LEET_CODE]: {
     label: "Leet Code",
-    link: "https://leetcode.com/u/KiT_Koval/",
+    link: "https://bit.ly/3AWvP89",
   },
 };

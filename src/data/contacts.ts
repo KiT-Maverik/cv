@@ -19,14 +19,14 @@ export const contacts: { [key in CONTACTS]: Contact } = {
   },
   [CONTACTS.LINKED_IN]: {
     label: "Linked In",
-    link: "https://linkedin.com/in/orlovn",
+    link: "https://bit.ly/3XBLbHY",
   },
   [CONTACTS.TELEGRAM]: {
     label: "Telegram",
-    link: "@mykolaorlov",
+    link: "https://bit.ly/4d4UEMq",
   },
   [CONTACTS.WEBSITE]: {
     label: "WWW",
-    link: "https://kit-maverik.github.io/cv/",
+    link: "https://bit.ly/4eztte3",
   },
 };
