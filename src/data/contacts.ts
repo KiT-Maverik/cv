@@ -14,8 +14,8 @@ interface Contact {
 
 export const contacts: { [key in CONTACTS]: Contact } = {
   [CONTACTS.EMAIL]: {
-    label: "mykola.orlov79@gmail.com",
-    link: "mykola.orlov79@gmail.com",
+    label: "Email",
+    link: "mailto:mykola.orlov79@gmail.com",
   },
   [CONTACTS.LINKED_IN]: {
     label: "Linked In",
