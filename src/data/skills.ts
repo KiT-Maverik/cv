@@ -1,8 +1,8 @@
 export const skills = [
   "AI",
-  "Typescript",
   "React",
   "Redux",
+  "Typescript",
   "NextJs",
   "NodeJs",
   "Material UI",
@@ -10,7 +10,6 @@ export const skills = [
   "GraphQL",
   "SASS/LESS",
   "Emotion",
-  "React query",
   "Recharts",
   "MERN",
 ] as const;

@@ -12,7 +12,6 @@ const action: { print: SxProps<Theme>; web: SxProps<Theme> } = {
     display: "none",
     textDecoration: "none",
     color: (theme) => theme.palette.text.primary,
-    p: (theme) => theme.spacing(1, 2),
 
     [layout.printer]: {
       display: "flex",
