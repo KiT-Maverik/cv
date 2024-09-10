@@ -1,4 +1,5 @@
 import { SxProps, Theme } from "@mui/material";
+
 import { layout } from "../../../constants";
 
 const container: SxProps<Theme> = {
@@ -9,9 +10,12 @@ const container: SxProps<Theme> = {
 const action: { print: SxProps<Theme>; web: SxProps<Theme> } = {
   print: {
     display: "none",
+    textDecoration: "none",
+    color: (theme) => theme.palette.text.primary,
+    p: (theme) => theme.spacing(1, 2),
 
     [layout.printer]: {
-      display: "initial",
+      display: "flex",
     },
   },
   web: {

@@ -48,6 +48,15 @@ export const Contacts = () => {
               <CopyIcon color="disabled" sx={{ fontSize: 16 }} />
             </Button>
           </Box>
+          <Button
+            sx={style.action.print}
+            component="a"
+            href={contacts[item].link}
+            target="_blank"
+            startIcon={icon[item]}
+          >
+            {contacts[item].label}
+          </Button>
         </>
       ))}
     </Box>
