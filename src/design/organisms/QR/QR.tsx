@@ -8,7 +8,12 @@ import style from "./QR.styles";
 export const QR = () => {
   return (
     <Box>
-      <Box sx={style.container} component="a" href="#" target="_blank">
+      <Box
+        sx={style.container}
+        component="a"
+        href="https://bit.ly/3Tn26vx"
+        target="_blank"
+      >
         <QRcode />
       </Box>
     </Box>
