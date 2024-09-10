@@ -1,6 +1,6 @@
 import { SxProps, Theme } from "@mui/material";
 
-import { pageWidth, layout } from "../../../constants";
+import { a4, layout } from "../../../constants";
 
 const container: SxProps<Theme> = {
   display: "flex",
@@ -59,7 +59,8 @@ const cv: SxProps<Theme> = {
   overflow: "hidden",
   borderRadius: 2,
   position: "relative",
-  maxWidth: pageWidth,
+  maxWidth: a4.width,
+  maxHeight: a4.height,
   userSelect: "none",
 
   [layout.printer]: {
