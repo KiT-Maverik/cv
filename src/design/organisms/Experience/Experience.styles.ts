@@ -15,6 +15,8 @@ const experience: {
   divider: SxProps<Theme>;
   period: { container: SxProps<Theme>; item: SxProps<Theme> };
   description: {
+    container: SxProps<Theme>;
+    skills: SxProps<Theme>;
     responsibility: { list: SxProps<Theme>; item: SxProps<Theme> };
   };
 } = {
@@ -40,6 +42,15 @@ const experience: {
     background: "#b37f56",
   },
   description: {
+    container: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 1,
+    },
+    skills: {
+      display: "flex",
+      gap: 1,
+    },
     responsibility: {
       list: {
         pl: 5,

@@ -1,5 +1,5 @@
 import WorkIcon from "@mui/icons-material/WorkOutlineOutlined";
-import { Box, Divider, Typography } from "@mui/material";
+import { Box, Chip, Divider, Typography } from "@mui/material";
 import React from "react";
 
 import { useData, useLocale } from "hooks";
@@ -18,15 +18,25 @@ export const Experience = () => {
       </Typography>
       <Box sx={style.experience.container}>
         {experience.map(
-          ({ start, end, responsibilities, company, position }) => (
+          ({ start, end, responsibilities, company, position, skills }) => (
             <>
               <Divider orientation="vertical" sx={style.experience.divider} />
-              <Box>
+              <Box sx={style.experience.description.container}>
                 <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
                   <Typography variant="h3" fontWeight={700}>
                     {`${company} || `}
                   </Typography>
                   <Typography>{`${position}, ${start} - ${end}`}</Typography>
+                </Box>
+                <Box sx={style.experience.description.skills}>
+                  {skills.map((item) => (
+                    <Chip
+                      key={item}
+                      label={item}
+                      variant="outlined"
+                      size="small"
+                    />
+                  ))}
                 </Box>
                 <Box
                   component="ul"

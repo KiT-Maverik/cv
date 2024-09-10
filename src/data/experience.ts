@@ -58,12 +58,10 @@ const responsibilities: Responsibilities = {
     [COMPANY.BY_OWLS]: [
       "Design and architect complex frontend solutions",
       "Take a lead role in frontend development projects, guiding junior developers, ensuring best practices are followed",
-      "Maintain and improve the codebase, ensuring code quality through code reviews, refactoring, and optimizing performance",
     ],
     [COMPANY.TACANS]: [
       "Perform technical assessment of designs and specifications",
       "Translate business requirements into technical specifications",
-      "Helping team members grow through code review, and mentoring",
     ],
   },
   [LOCALE.UA]: {
@@ -75,12 +73,10 @@ const responsibilities: Responsibilities = {
     [COMPANY.BY_OWLS]: [
       "Проектування та створення складних рішень фронтенду",
       "Брати лідерську роль у проектах, менторити молодших розробників, контролювати дотримання кращих практик",
-      "Підтримка та вдосконалення кодової бази, забезпечення якості коду через код ревʼю, та оптимізацію продуктивності",
     ],
     [COMPANY.TACANS]: [
       "Технічний аналіз макетів та архітектурних специфікацій",
       "Робота з технічними вимогами",
-      "Підтримка розвитку інших членів команди",
     ],
   },
 };
