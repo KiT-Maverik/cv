@@ -2,6 +2,7 @@ import { SxProps } from "@mui/material";
 import { Theme } from "@mui/material/styles";
 
 const container: SxProps<Theme> = {
+  display: "block",
   height: 200,
   aspectRatio: 1,
   backgroundColor: "white",
