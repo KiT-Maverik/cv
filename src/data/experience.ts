@@ -1,4 +1,5 @@
 import { LOCALE } from "../constants";
+import { skills as skillsArray } from "./skills";
 
 enum COMPANY {
   ALTERYX = "Alteryx",
@@ -11,6 +12,7 @@ interface Experience {
   company: COMPANY;
   position: string;
   responsibilities: string[];
+  skills: Array<(typeof skillsArray)[number]>;
 }
 
 export const experience: (locale: LOCALE) => Experience[] = (locale) => [
@@ -20,6 +22,7 @@ export const experience: (locale: LOCALE) => Experience[] = (locale) => [
     company: COMPANY.BY_OWLS,
     position: "Code Master",
     responsibilities: responsibilities[locale][COMPANY.BY_OWLS],
+    skills: ["AI", "React", "Redux", "Typescript"],
   },
   {
     start: "2020",
@@ -27,6 +30,7 @@ export const experience: (locale: LOCALE) => Experience[] = (locale) => [
     company: COMPANY.TACANS,
     position: "Software Development Engineer",
     responsibilities: responsibilities[locale][COMPANY.TACANS],
+    skills: ["AI", "React", "Redux", "Typescript"],
   },
   {
     start: "2016",
@@ -34,6 +38,7 @@ export const experience: (locale: LOCALE) => Experience[] = (locale) => [
     company: COMPANY.ALTERYX,
     position: "Software Development Engineer",
     responsibilities: responsibilities[locale][COMPANY.ALTERYX],
+    skills: ["AI", "React", "Redux", "Typescript"],
   },
 ];
 
