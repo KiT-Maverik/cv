@@ -22,7 +22,15 @@ export const experience: (locale: LOCALE) => Experience[] = (locale) => [
     company: COMPANY.BY_OWLS,
     position: "Code Master",
     responsibilities: responsibilities[locale][COMPANY.BY_OWLS],
-    skills: ["AI", "React", "Redux", "Typescript"],
+    skills: [
+      "AI",
+      "React",
+      "Redux",
+      "Typescript",
+      "NodeJs",
+      "Material UI",
+      "Emotion",
+    ],
   },
   {
     start: "2020",
@@ -30,7 +38,7 @@ export const experience: (locale: LOCALE) => Experience[] = (locale) => [
     company: COMPANY.TACANS,
     position: "Software Development Engineer",
     responsibilities: responsibilities[locale][COMPANY.TACANS],
-    skills: ["AI", "React", "Redux", "Typescript"],
+    skills: ["NextJs", "Redux", "Typescript", "NodeJs", "GraphQL", "SASS/LESS"],
   },
   {
     start: "2016",
@@ -38,7 +46,7 @@ export const experience: (locale: LOCALE) => Experience[] = (locale) => [
     company: COMPANY.ALTERYX,
     position: "Software Development Engineer",
     responsibilities: responsibilities[locale][COMPANY.ALTERYX],
-    skills: ["AI", "React", "Redux", "Typescript"],
+    skills: ["React", "Redux", "Typescript", "Tailwind", "NodeJs", "Recharts"],
   },
 ];
 
