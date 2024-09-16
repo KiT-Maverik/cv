@@ -25,7 +25,6 @@ import {
   Portfolio,
   Profile,
   QR,
-  Reference,
   Skills,
 } from "design/organisms";
 import { useCopyToClipboard, useData, useLocale, useRawData } from "hooks";
@@ -91,7 +90,6 @@ export function CvPage() {
         <Box sx={style.columns.info}>
           <QR />
           <Skills />
-          <Reference />
           <Contacts />
           <Education />
         </Box>
